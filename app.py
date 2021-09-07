@@ -4,7 +4,7 @@ import pickle
 
 app = Flask(__name__)
 model = pickle.load(
-    open('model.pkl', 'rb'))
+    open('model.pkl', 'rb'),encoding='latin1')
 
 
 @app.route('/')
